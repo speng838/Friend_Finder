@@ -1,23 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="main.js"></script>
+	<title>Paddy's Pub Social Network</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
 </head>
-<body>
-    <div>
-        <h1>Friend Finder</h1>
-        <p>--------------------------------------</p>
-        <p>Answer a few basic questions</p>
-        <p>Then find the friend with the greatest compatibility</p>
-        <a href = "/survey"><button>Go to Survey</button></a>
-    </div>
+<body class="site">
+	<div class="container content">
+		<h1>Friend-Finder</h1>
+		<p>Welcome to our site! If you are looking for new friends whether it be for a romantic or platonic relationship, then you have come to the right place. Our algorithm will match you with the person just for you. All you need to do is procede to take our survey and once completed, you will be matched right away! </p>
+		
+		<div class="text-center">
+			<a href="/survey"><button class="btn btn-lg btn-success">Take Survey</button></a>
+		</div>
+	</div>
 
+	<footer>
+		<div class="container">
+			<a href="/api/friends">Find friends API</a>
+			<span>|</span>
+			<a href="https://github.com/yoonslee/FriendFinder">GitHub Repo</a><!--CHANGE!!!!!!!!!!!!!!!!!-->
+		</div>
+	</footer>
 
-
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>

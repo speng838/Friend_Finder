@@ -1,278 +1,217 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="main.js"></script>
-
-    
-    <style>
-            body {font-family: Arial, Helvetica, sans-serif;}
-            
-            /* The Modal (background) */
-            .modal {
-              display: none; /* Hidden by default */
-              position: fixed; /* Stay in place */
-              z-index: 1; /* Sit on top */
-              padding-top: 100px; /* Location of the box */
-              left: 0;
-              top: 0;
-              width: 100%; /* Full width */
-              height: 100%; /* Full height */
-              overflow: auto; /* Enable scroll if needed */
-              background-color: rgb(0,0,0); /* Fallback color */
-              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-            }
-            
-            /* Modal Content */
-            .modal-content {
-              background-color: #fefefe;
-              margin: auto;
-              padding: 20px;
-              border: 1px solid #888;
-              width: 80%;
-            }
-            
-            /* The Close Button */
-            .close {
-              color: #aaaaaa;
-              float: right;
-              font-size: 28px;
-              font-weight: bold;
-            }
-            
-            .close:hover,
-            .close:focus {
-              color: #000;
-              text-decoration: none;
-              cursor: pointer;
-            }
-            </style>
-
+	<title>Survey - Paddy's Pub Social Network</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Link static CSS -->
+	<link rel="stylesheet" type="text/css" href="/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Roboto" rel="stylesheet">
 </head>
 <body>
-    
-        <form role="form">
+	<div class="container content">
+		<h1>Survey</h1>
+		<p>Take a quick survey to find your perfect match! These questions are answered by the numbers 1 through 5. If you really, really disagree with the statement, your answer would be 1. If you find a statement to hit extremely close to home, put in a 5.</p>
+		<form>
+			<div class="form-group">
+				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
+			</div>
+			<div class="form-group">
+				<input id="photo" type="text" class="form-control" placeholder="Link to Profile Photo (Required)">
+			</div>
+			<div class="form-group">
+				<label for="question1">You are very loud and gregarious when it come to the conversations you have when meeting new people</label>
+				<select class="form-control" id="question1">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question2">When you were a kid, you did not like to share anything with anybody</label>
+				<select class="form-control" id="question2">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question3">You lead an active lifestyle and play sport on a near daily basis</label>
+				<select class="form-control" id="question3">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question4">You tend to be passive rather than aggressive in arguments</label>
+				<select class="form-control" id="question4">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question5">On a Friday night, you tend to stay in rather than hangout with friends</label>
+				<select class="form-control" id="question5">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question6">You get more work done at night rather than in the day time</label>
+				<select class="form-control" id="question6">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question7">You rather get up early in the morning rather than stay up late at night</label>
+				<select class="form-control" id="question7">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question8">You tend to be a fast eater rather than someone who chews out their food entirely</label>
+				<select class="form-control" id="question8">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question9">You like contact sports rather than sports with little to no contact</label>
+				<select class="form-control" id="question9">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question10">Your ideal vacation would be to seek some quiet time and read a book rather than go out and play in the sun</label>
+				<select class="form-control" id="question10">
+					<option value="empty"></option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+			</div>
+		</form>
+		<div class="text-center">
+			<button id="submitBtn" type="submit" class="btn btn-success btn-lg">Submit</button>
+		</div>
+		
+		<!-- Modal after survey completion -->
+		<div id="bestFriendModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Your New Best Friend</h1>
+					</div>
+					<div class="modal-body">
+						<h2 id="bestFriend"></h2>
+						<img id="bestFriendPhoto" src="#">
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
-                <div class="form-group">
-                    <label for="reserve-name">Name</label>
-                    <input type="text" class="form-control" id="reserve-name">
-                </div>
-                <div class="form-group">
-                    <label for="reserve-photoURL">Photo URL</label>
-                    <input type="text" class="form-control" id="reserve-photoURL">
-                </div>
-            
-                <h2>Question 1:</h2>
-                <p>You are very loud and gregarious when it come to the conversations you have when meeting new people</p>
-                <select id="question1">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <h2>Question 2:</h2>
-                <p>When you were a kid, you did not like to share anything with anybody</p>
-                <select id="question2">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <h2>Question 3:</h2>
-                <p>You lead an active lifestyle and play sport on a near daily basis</p>
-                <select id="question3">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <h2>Question 4:</h2>
-                <p>You tend to be passive rather than aggressive in arguments</p>
-                <select id="question4">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <h2>Question 5:</h2>
-                <p>On a Friday night, you tend to stay in rather than hangout with friends</p>
-                <select id="question5">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <h2>Question 6:</h2>
-                <p>You get more work done at night rather than in the day time</p>
-                <select id="question6">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <h2>Question 7:</h2>
-                <p>You rather get up early in the morning rather than stay up late at night</p>
-                <select id="question7">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <h2>Question 8:</h2>
-                <p>You tend to be a fast eater rather than someone who chews out their food entirely</p>
-                <select id="question8">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <h2>Question 9:</h2>
-                <p>You like contact sports rather than sports with little to no contact</p>
-                <select id="question9">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <h2>Question 10:</h2>
-                <p>Your ideal vacation would be to seek some quiet time and read a book rather than go out and play in the sun</p>
-                <select id="question10">
-                    <option value=1>1 (strongly disagree)</option>
-                    <option value=2>2</option>
-                    <option value=3>3</option>
-                    <option value=4>4</option>
-                    <option value=5>5 (strongly agree)</option>
-                </select>
-            
-                <button id="myBtn" type="submit" class="btn btn-primary submit">Submit</button>
-                </form>
+	<footer>
+		<div class="container">
+			<a href="/api/friends">Find Friends API</a>
+			<span>|</span>
+			<a href="https://github.com/yoonslee/FriendFinder">GitHub Repo</a> <!--Change!!!!!!-->
+		</div>
+	</footer>
 
-<!-- The Modal -->
-<div id="myModal" class="modal">
-    
-        <!-- Modal content -->
-        <div class="modal-content">
-          <span class="close">&times;</span>
-          <p>Some text in the Modal..</p>
-        </div>
-      
-      </div>
-
-    <script type = "text/javascript">
-
-                     // Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-$("#myBtn").on("click",function() {
-
-  modal.style.display = "block";
-  $("#myModal").modal("show") 
-});
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-
-    
-        //$(".submit").on("click", function(){
-        $("#myBtn").on("click", function(){
-
-            modal.style.display = "block";
-            
-
-            var newFriend = {
-                "name": $("#reserve-name").val().trim(),
-                "photo": $("#reserve-photoURL").val().trim(),
-                "scores": [
-                        $("#question1").val().trim(),
-                        $("#question2").val().trim(),
-                        $("#question3").val().trim(),
-                        $("#question4").val().trim(),
-                        $("#question5").val().trim(),
-                        $("#question6").val().trim(),
-                        $("#question7").val().trim(),
-                        $("#question8").val().trim(),
-                        $("#question9").val().trim(),
-                        $("#question10").val().trim()
-                        ]
-
-                        
-            };
-            //for adding and finding nearest, refer to this website
-            //https://stackoverflow.com/questions/5464919/find-a-matching-or-closest-value-in-an-array
-                           
-
-   
-
-            
-            $.post("/api/friends", newFriend, function(data){
-                    
-                if (data) {
-                    alert("Yay! You are officially entered into the system!");
-                    }    
-                else {
-                    alert("Please re-enter your information and try again");
-                    }
-                
-                    $("#reserve-name").val("");
-                    $("#reserve-photoURL").val("");
-                        [
-                        $("#question1").val(""),
-                        $("#question2").val(""),
-                        $("#question3").val(""),
-                        $("#question4").val(""),
-                        $("#question5").val(""),
-                        $("#question6").val(""),
-                        $("#question7").val(""),
-                        $("#question8").val(""),
-                        $("#question9").val(""),
-                        $("#question10").val("")
-                        
-                        ]
-            });
-        });
-
-
-
-        
-    </script>
+	<script
+	  src="https://code.jquery.com/jquery-3.2.1.min.js"
+	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+	  crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
+
+<script type="text/javascript">
+	$("#submitBtn").on("click", function(event) {
+		event.preventDefault();
+
+		// Form validation
+		var valid = true;
+
+		if($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+			valid = false;
+		}
+
+		if(valid === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+
+			var currentURL = window.location.origin;
+
+			// Ajax call for receiving response after POST req
+			$.post(currentURL + "/api/friends", newUser, function(data) {
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+			});
+		} else {
+			// If a required field is missing, show alert
+			alert("Survey is incomplete!");
+		}
+	});
+</script>

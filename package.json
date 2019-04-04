@@ -1,7 +1,7 @@
 {
-  "name": "friend_finder",
+  "name": "friend-finder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Homework #13",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,17 +9,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/speng838/Friend_Finder.git"
+    "url": "git+https://github.com/yoonslee/FriendFinder.git"
   },
-  "author": "",
+  "author": "Yoon Lee",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/speng838/Friend_Finder/issues"
+    "url": "https://github.com/yoonslee/FriendFinder/issues"
   },
-  "homepage": "https://github.com/speng838/Friend_Finder#readme",
+  "homepage": "https://github.com/yoonslee/FriendFinder#readme",
   "dependencies": {
-    "bluebird": "^3.5.3",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "pg-promise": "^8.6.4"
+    "path": "^0.12.7"
   }
 }

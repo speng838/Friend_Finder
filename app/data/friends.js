@@ -1,84 +1,29 @@
-
-
-var friendsArray = [
-    {
-        name:"Ahmed",
-        photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        scores:[
-            "5",
-            "1",
-            "4",
-            "4",
-            "5",
-            "1",
-            "2",
-            "5",
-            "4",
-            "1"
-        ]
-    },
-    {
-        name:"Tony",
-        photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        scores:[
-            "2",
-            "3",
-            "2",
-            "1",
-            "5",
-            "3",
-            "2",
-            "2",
-            "5",
-            "1"
-        ]
-    },
-    {
-        name:"Sophia",
-        photo:"https://media.licdn.com/mpr/mpr/shrinknp_400_400/p/6/005/064/1bd/3435aa3.jpg",
-        scores:[
-            "3",
-            "1",
-            "2",
-            "1",
-            "4",
-            "3",
-            "1",
-            "2",
-            "1",
-            "1"
-        ]
-    }
-
-
+var friends = [
+	{
+		name: "Mario",
+		photo: "https://cdn.vox-cdn.com/thumbor/Yt1avchDkHqEqJuhYZ3YjKF3kFc=/0x0:1700x960/1200x675/filters:focal(714x344:986x616)/cdn.vox-cdn.com/uploads/chorus_image/image/57514059/mario.0.jpg",
+		scores: [5, 1, 2, 3, 1, 2, 5, 1, 1, 1]
+	},
+	{
+		name: "Donkey Kong",
+		photo: "https://www.funstockretro.co.uk/news/wp-content/uploads/2018/09/donkey-kong.jpg",
+		scores: [2, 5, 4, 1, 2, 3, 3, 2, 3, 3]
+	},
+	{
+		name: "Princess Peach",
+		photo: "https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Peach_%28Super_Mario_3D_World%29.png/220px-Peach_%28Super_Mario_3D_World%29.png",
+		scores: [1, 1, 5, 3, 3, 5, 1, 2, 3, 4]
+	},
+	{
+		name: "Toad",
+		photo: "https://cdn.vox-cdn.com/thumbor/QPE0LOlt3wP6P_kaNYPWoqvBA4s=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/13109287/tum.jpg",
+		scores: [3, 1, 3, 5, 2, 3, 2, 2, 5, 5]
+	},
+	{
+		name: "Luigi",
+		photo: "https://aff5fa4925746bf9c161-fb36f18ca122a30f6899af8eef8fa39b.ssl.cf5.rackcdn.com/images/Masthead_luigi.17345b1513ac044897cfc243542899dce541e8dc.9afde10b.png",
+		scores: [3, 1, 4, 4, 2, 4, 2, 5, 1, 3]
+	}
 ];
 
-module.exports = friendsArray;
-
-var scoresTotal = 0;
-var array = [];
-for(i=0; i<friendsArray.length; i++){
-    scoresTotal = 0;
-    for(j=0; j<friendsArray[i].scores.length; j++){
-        
-        scoresTotal += parseInt(friendsArray[i].scores[j]);
-    }
-    array.push(scoresTotal);
-    console.log(array);
-}
-var array2 =[];
-for(i=0; i<array.length-1; i++){
-    array2.push(Math.abs(array[array.length-1] - array[i]));
-}
-console.log(array2);
-
-var index = 0;
-var value = array2[0];
-for (var i = 1; i < array2.length; i++) {
-  if (array2[i] < value) {
-    value = array2[i];
-    index = i;
-  }
-  console.log(index);
-}
-
+module.exports = friends;
