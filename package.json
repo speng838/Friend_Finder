@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yoonslee/FriendFinder.git"
+    "url": "git+https://github.com/speng838/Friend_Finder.git"
   },
-  "author": "Yoon Lee",
+  "author": "Steven Peng",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yoonslee/FriendFinder/issues"
+    "url": "https://github.com/speng838/Friend_Finder/issues"
   },
-  "homepage": "https://github.com/yoonslee/FriendFinder#readme",
+  "homepage": "https://github.com/speng838/Friend_Finder#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
