@@ -1,8 +1,15 @@
 {
-  "name": "friend-finder",
+  "name": "friend_finder",
   "version": "1.0.0",
-  "description": "Homework #13",
+  "description": "Welcome to Friend Finder. To begin, open the terminal of the server and install all required packages. Afterwards run the command \"node server.js\" for the app to listen to the port. Once that is done, open up your browser and type in the host name followed by \":\" and your port number. Press enter and the site should show up on your browser.",
   "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -11,17 +18,10 @@
     "type": "git",
     "url": "git+https://github.com/speng838/Friend_Finder.git"
   },
-  "author": "Steven Peng",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/speng838/Friend_Finder/issues"
   },
-  "homepage": "https://github.com/speng838/Friend_Finder#readme",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "mysql": "^2.16.0",
-    "path": "^0.12.7"
-  },
-  "devDependencies": {}
+  "homepage": "https://github.com/speng838/Friend_Finder#readme"
 }
